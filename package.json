@@ -1,0 +1,26 @@
+{
+  "name": "contract-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "''",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "openzeppelin-solidity": "^1.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamchrissmith/contract-tests.git"
+  },
+  "author": "iamchrissmith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamchrissmith/contract-tests/issues"
+  },
+  "homepage": "https://github.com/iamchrissmith/contract-tests#readme"
+}
