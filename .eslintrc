@@ -1,0 +1,59 @@
+{
+  "root": true,
+  "extends": [ "eslint:recommended", "google", "plugin:node/recommended"],
+  "plugins": [ "node", "mocha" ],
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-var": ["error"],
+    "new-cap": ["off"],
+    "no-console": ["off"],
+    "require-jsdoc": ["off"],
+    "indent": ["error", 2, {"SwitchCase": 1}],
+    "prefer-spread": ["off"],
+    "no-invalid-this": ["off"],
+    "curly": ["error"],
+    "no-multi-str": ["off"],
+    "keyword-spacing": ["off"],
+    "node/no-unpublished-require": ["off"],
+    "node/no-unsupported-features": ["off"],
+    "semi": ["error"],
+    "arrow-parens": 0,
+    "no-process-exit": ["off"],
+    "no-throw-literal": ["off"],
+    "no-constant-condition": ["off"],
+    "max-len": [
+      "error", {
+        "code": 80, 
+        "tabWidth": 2,
+        "ignorePattern": "^\\s*const\\s.+=\\s*require\\s*\\(",
+        "ignoreComments": true,
+        "ignoreUrls": true
+      }],
+    "mocha/no-exclusive-tests": "error",
+    "mocha/no-skipped-tests": "error",
+    "prefer-const": ["error", {
+        "destructuring": "any",
+    }]
+  },
+  "globals": {
+    "web3": true,
+    "assert": true,
+    "contract": true,
+    "artifacts": true
+  },
+  "settings": {
+    "mocha/additionalTestFunctions": [
+        "describeModule"
+    ]
+  }
+}
